@@ -1,0 +1,9 @@
+{
+    "presets": ["react", "stage-0", "env"],
+    "plugins": ["transform-class-properties"],
+    "env": {
+        "test": {
+            "plugins": ["istanbul"]
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.uscc-account-slide-out-container
+    position: absolute
+    right: 0
+    top: 89px
+    width: 0px
+    height 100%
+    visibility: hidden
+    transition-duration: 0.2s
+    transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1)
+    transition-property: width, visibility
+    background-color: #fafafa
+
+.uscc-account-slide-out-container__open
+    width: 400px
+    visibility: visible
+    z-index: 8000
+
+.uscc-account-slide-out-container__background
+    background-color: #fff
+    border: solid #fafafa 1px
+    padding: 10px
+
+.uscc-account-slide-out-label-container
+    font-family: Nokia Pure Text Bold
+    display: flex
+    flex-direction: row
+
+.uscc-account-slide-out-label-container__button
+    margin-left: auto
+    position: relative
+    top: -7px
+
+.uscc-account-slide-out-select-container
+    padding: 10px 20px 0 10px
+
+.uscc-account-slide-out-select-container__button
+    padding-top: 10px
+
+.uscc-account-slide-out--chip-container
+    display: flex
+    flex-wrap: wrap
+
+.uscc-account-slide-out--chip-container .csfWidgets .chips
+    margin: 5px 3px 5px 0
+
+.uscc-account-slide-out-container .csfWidgets .scroll-button-right
+    display: none
+
+.uscc-account-slide-out--chip-container>.csfWidgets .chips span.chips-secondary-text
+    display: block

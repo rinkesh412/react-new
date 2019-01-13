@@ -1,0 +1,41 @@
+.uscc-approval-slide-out-container
+    position: absolute
+    right: 0
+    top: 89px
+    width: 0px
+    height 86%
+    visibility: hidden
+    transition-duration: 0.2s
+    transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1)
+    transition-property: width, visibility
+    background-color: #fafafa
+
+.uscc-approval-slide-out-container__open
+    width: 300px
+    visibility: visible
+    z-index: 8000
+
+.uscc-approval-slide-out-container__background
+    background-color: #fff
+    border: solid #fafafa 1px
+    padding: 10px
+
+.uscc-approval-slide-out-label-container
+    font-family: Nokia Pure Text Bold
+    padding: 10px 0
+    display: flex
+    flex-direction: row
+
+.uscc-approval-slide-out-label-container__button
+    margin-left: auto
+    position: relative
+    top: -7px
+
+.uscc-approval-slide-out-form-container
+    padding: 10px 0
+
+.csfWidgets > .row > .col-sm-6.uscc-approval-slide-out-form__rate-plan
+    min-height: 65px
+
+.uscc-approval-slide-out-form-container__button
+    padding-top: 10px

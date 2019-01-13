@@ -1,0 +1,51 @@
+osv-hl = #e69800
+osv-bg = #fcffb2
+fum-hl = #c73f3f
+fum-bg = #ffe0e0
+sbp-hl = #00ad00
+sbp-bg = #cfc
+pvi-hl = #19a6ff
+pvi-bg = #e0f1f8
+com-hl = #667
+com-bg = #ddd
+
+.root-domain-container
+    width: 100%
+    min-height: 100%
+
+.root-domain-menu > .rc-menu-submenu-active > .rc-menu-submenu-title
+.root-domain-menu > .rc-menu-submenu-selected > .rc-menu-submenu-title
+.root-domain-menu > .rc-menu-item-active
+.root-domain-menu > .rc-menu-item-selected
+    background-color: com-bg
+    border-bottom: none
+
+.rc-menu-item-selected
+    border-right: solid 3px
+
+domain-menu-item(domain, hl, bg)
+    .root-domain-menu
+        > li > ul > li.domain-{domain} > div > .submenu-title-wrapper
+            color: hl
+
+    li.domain-{domain}
+        .rc-menu-item-active
+        .rc-menu-item-selected
+        .rc-menu-submenu-active > .rc-menu-submenu-title
+        .rc-menu-sub.rc-menu-inline > .rc-menu-submenu-selected > .rc-menu-submenu-title
+            color: hl
+            background-color: bg
+
+    .root-domain-menu
+        .rc-menu-submenu-active.domain-{domain}
+        .rc-menu-submenu-selected.domain-{domain}
+            border-bottom: none
+            > .rc-menu-submenu-title
+                background-color: bg
+                color: hl
+
+domain-menu-item(osv, osv-hl, osv-bg)
+domain-menu-item(fum, fum-hl, fum-bg)
+domain-menu-item(sbp, sbp-hl, sbp-bg)
+domain-menu-item(pvi, pvi-hl, pvi-bg)
+domain-menu-item(com, com-hl, com-bg)

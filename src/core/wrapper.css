@@ -1,0 +1,12 @@
+.Outer-div {
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    border: 3px solid #191A18;
+    padding: 10px;
+    
+  }
+
+.Error-area {
+    color: #A13737;
+}

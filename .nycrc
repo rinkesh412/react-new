@@ -1,0 +1,22 @@
+{
+  "require": [
+    "babel-register"
+  ],
+  "sourceMap": false,
+  "instrument": false,
+  "exclude": [
+    "src/**/*.spec.js",
+    "test"
+  ],
+  "reporter": [
+      "lcov",
+      "text",
+      "html"
+    ],
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 80,
+    "statements": 80,
+    "functions": 80,
+    "branches": 80
+}

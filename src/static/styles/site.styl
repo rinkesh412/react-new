@@ -1,0 +1,57 @@
+@import url("/portalweb/resource/smp/portalweb/common/custom-styles.css")
+
+body
+    margin: 0
+    font-family: "Nokia Regular", Arial, sans-serif
+    font-size: 16px
+
+body
+html
+    height: 100%
+
+#root
+#route
+    height: 100%
+    width: 100%
+
+.router
+    height: 100%
+
+.react-grid-item.react-grid-placeholder
+    background: #ddd
+
+.container-content
+    height: 100%
+
+.container-content__main
+.container-content__main > div
+    display: block !important
+
+.app-banner__logo
+    max-width: 110px !important
+    height: 32px !important
+    background-size: contain
+    background-repeat: no-repeat
+    background-image: url(/portalweb/resource/smp/portalweb/sites/dsp/resources/images/docomo-logo-white@1x.png)
+
+    @media screen and (min-resolution: 1.5dppx)
+        background-image: url(/portalweb/resource/smp/portalweb/sites/dsp/resources/images/docomo-logo-white@2x.png)
+    @media screen and (min-resolution: 2dppx)
+        background-image: url(/portalweb/resource/smp/portalweb/sites/dsp/resources/images/docomo-logo-white@3x.png)
+    > .app-banner__logo__img
+        display: none
+
+button#smpAppBanner-appBanner-sideDrawerButton-button
+    display: none
+
+.csf-widgets-expansion-panel .item-wrapper
+    background-color: transparent 
+.csf-widgets-expansion-panel .item-wrapper.expanded:hover
+    background-color: transparent 
+.csf-widgets-expansion-panel .item-wrapper.collapsed:hover
+    background-color: transparent 
+div#smpAppBanner-appBanner-sideDrawer
+    display: none
+.csfWidgets.app-banner .main-content-area--reserve-compact-side-drawer-space
+    margin-left: 0px
+    width: 100%

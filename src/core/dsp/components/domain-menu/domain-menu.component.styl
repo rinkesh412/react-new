@@ -1,0 +1,94 @@
+.container-content__main
+    margin-top: 0
+
+.domain-menu-container
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    box-shadow: 0 0 10px #ccc
+    display: flex
+    z-index: 10
+    background-color: #fafafa
+
+#listMenuActions
+    &.csfWidgets.list
+        float: none
+        background-color: #efefef;
+        border-bottom: solid 1px #ccc
+        box-shadow: none
+        padding: 5px 0
+        position: absolute;
+        right: 0;
+        left: 0;
+
+    .csfWidgets.list-item
+    .csfWidgets.list-item--selected
+        background-color: #efefef
+    .list__items-wrapper
+        padding: 0
+    .list__item
+        float: left
+
+    .csfWidgets.list-item--withAvatar .svg-container
+        padding-top: 6px
+
+.root-domain-menu
+    width: 300px
+    overflow: auto
+    box-sizing: border-box
+    box-shadow: none
+    border: none
+    border-radius: 0
+    padding: 0
+    margin-top: 43px
+    margin-left: 0
+
+.root-domain-menu > li:first-child
+    margin-top: 0
+
+.rc-menu
+    li,
+    .rc-menu-submenu-title
+        font-size: 13px
+    .rc-menu-item
+        /* margin: 1px 0 */
+    .rc-menu-submenu-selected
+        background-color: #fff;
+
+.rc-menu-horizontal
+    > .rc-menu-item,
+    > .rc-menu-submenu > .rc-menu-submenu-title
+        padding: 8px 20px
+
+.rc-menu-vertical > .rc-menu-item, .rc-menu-vertical-left > .rc-menu-item,
+.rc-menu-vertical-right > .rc-menu-item, .rc-menu-inline > .rc-menu-item,
+.rc-menu-vertical > .rc-menu-submenu > .rc-menu-submenu-title,
+.rc-menu-vertical-left > .rc-menu-submenu > .rc-menu-submenu-title,
+.rc-menu-vertical-right > .rc-menu-submenu > .rc-menu-submenu-title,
+.rc-menu-inline > .rc-menu-submenu > .rc-menu-submenu-title
+    padding: 8px 20px 8px 20px
+
+.rc-menu-vertical .rc-menu-submenu-arrow,
+.rc-menu-vertical-left .rc-menu-submenu-arrow,
+.rc-menu-vertical-right .rc-menu-submenu-arrow,
+.rc-menu-inline .rc-menu-submenu-arrow
+    line-height: 1.2em
+
+.rc-menu-sub.rc-menu-inline > .rc-menu-item,
+.rc-menu-sub.rc-menu-inline > .rc-menu-submenu > .rc-menu-submenu-title
+    margin-top: 1px
+
+.root-domain-menu > li
+.root-domain-menu > li > div > .submenu-title-wrapper
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #667
+    margin-top: 1px
+
+.root-domain-menu > li > ul >li
+    text-transform: none;
+
+.root-domain-menu > li > ul >li > ul >li > div >.submenu-title-wrapper
+    font-weight: bold;
+    color: #667
